@@ -104,7 +104,7 @@ histogram_ax.grid(b=True, color='gray', linestyle='--', linewidth=0.5);
 plt.show()
 
 
-#added histogram code is below
+#added histogram code is belows
 #plot a histogram NDWI
 def image_histogram(ndwi2):
     from rasterio.plot import show_hist
@@ -115,6 +115,7 @@ def image_histogram(ndwi2):
     plt.show()
 get_ipython().run_line_magic('matplotlib', 'inline')
 image_histogram(ndwi2) 
+
 
 
 
