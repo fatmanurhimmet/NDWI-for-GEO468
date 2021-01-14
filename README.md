@@ -45,6 +45,9 @@ ndwiImage = rasterio.open('Desktop/sentinel_output_ndwi.tif')
 fig = plt.figure(figsize=(18,12))
 plot.show(ndwiImage, cmap='gray')
  """
- ### __Output NDWI Plot__
+ ### __Output NDWI Plot:__
  -![NDWI_Plot](NDWI_Plot.JPG)
+ 
+ ### __NDWI Histogram Plot:__
+ -![NDWI_Histogram](NDWI_Histogram.JPG)
  
