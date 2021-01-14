@@ -13,12 +13,15 @@ Sentinel 2A image which is taken from the satellite the date 12.08.2020.
 - __Band 8 which is NIR Band__
 
 ***
-### Jupyter Notebook which have pyhton 3.6.12 version and its libraries were used in this project.
-__Libraries__
+### Jupyter Notebook which have pyhton 3.6.12 version and its libraries in conda environment were used in this project.
+ __Libraries__
 - Rasterio
 - Matplotlib
 - Numpy
 - Opencv
 
 ***
+Input Band's Plots are shown: 
+
+
 
