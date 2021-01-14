@@ -39,7 +39,7 @@ ndwiImage = rasterio.open('Desktop/sentinel_output_ndwi.tif','w',driver='Gtiff',
 ndwiImage.write(ndwi,1)
 ndwiImage.close()
 
-
+## Outputs
 #plot NDWI
 ndwiImage = rasterio.open('Desktop/sentinel_output_ndwi.tif') 
 fig = plt.figure(figsize=(18,12))
