@@ -65,3 +65,8 @@ image_histogram(ndwi2)
  ### __NDWI Histogram Plot:__
  -![NDWI_Histogram](NDWI_Histogram.JPG)
  
+ ### References
+ - Basic Ship Detection in Remote Sensing by Sehn Körtig
+ - NDVI Calculation by Hatari Lab
+ - Dealing with Geospatial Raster Data in Python with Rasterio (Medium.com)
+ 
