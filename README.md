@@ -24,4 +24,4 @@ Sentinel 2A image which is taken from the satellite the date 12.08.2020.
 ### __The RGB colors of the image is shown:__ 
 -![RGB Image Plot](RGB_Image_Plot.JPG)
 ### __Band3 and Band8 which are used for NDWI
--![]
+-![Band3_Band8_Plot](Band3_Band8_Plot.JPG)
