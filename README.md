@@ -6,6 +6,6 @@ This code calculates the NDWI of Sentinel 2A image in Kocaeli Gulf region. Satel
 ***
 ### Used Image Bands
 - __Band 3 which is Green Band__
--__Band 8 which is NIR Band__
+- __Band 8 which is NIR Band__
 
 
