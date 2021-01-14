@@ -33,17 +33,17 @@ Sentinel 2A image which is taken from the satellite the date 12.08.2020.
 """
 -__#export NDWI image__
 -ndwiImage = rasterio.open('Desktop/sentinel_output_ndwi.tif','w',driver='Gtiff',
--                          width=band8.width, 
--                          height = band8.height, 
--                          count=1, crs=band8.crs, 
--                          transform=band8.transform,
--                         dtype='float64')
--ndwiImage.write(ndwi,1)
--ndwiImage.close()
--#plot NDWI
--ndwiImage = rasterio.open('Desktop/sentinel_output_ndwi.tif') 
--fig = plt.figure(figsize=(18,12))
--plot.show(ndwiImage, cmap='gray')
+                         width=band8.width, 
+                          height = band8.height, 
+                          count=1, crs=band8.crs, 
+                          transform=band8.transform,
+                         dtype='float64')
+ndwiImage.write(ndwi,1)
+ndwiImage.close()
+#plot NDWI
+ndwiImage = rasterio.open('Desktop/sentinel_output_ndwi.tif') 
+fig = plt.figure(figsize=(18,12))
+plot.show(ndwiImage, cmap='gray')
  """
  ### __Output NDWI Plot:__
  -![NDWI_Plot](NDWI_Plot.JPG)
@@ -65,8 +65,8 @@ image_histogram(ndwi2)
  ### __NDWI Histogram Plot:__
  -![NDWI_Histogram](NDWI_Histogram.JPG)
  
- - NDWI formula is: Band3 - Band8 / Band3 + Band8. When this formula is applied to the image, ship detection and coastal lines detection can not be determined. When the first pary of the equation (Band3-Band8) taken as Band8-Band3, then the result is very clear. Because the first part of the equation is different, then in the output image, black parts represent water and brighter parts represent ships and bridge.
- - When the histogram examined, it is seen that -0,5 value could be taken as the treshold value. If tresholding is applied at this point, then the artificial objects on the water and the water could seperate from eacg other. However my treshold code did not work, so i did not apply the tresholding for the image.  
+ - NDWI formula is: Band3 - Band8 / Band3 + Band8. When this formula is applied to the image, ship detection and coastal lines detection can not be determined. When the first part of the equation (Band3-Band8) taken as Band8 - Band3, then the result is very clear. Because the first part of the equation is different then in the output image's black parts represent water and brighter parts represent ships and bridge.
+ - When the histogram examined, it is seen that -0,5 value could be taken as the treshold value. If tresholding is applied at this point, then the artificial objects on the water and the water could seperate from each other. However my treshold code did not work, so i did not apply the tresholding for the image.  
  
  ### References
  - Basic Ship Detection in Remote Sensing by Sehn Körtig
