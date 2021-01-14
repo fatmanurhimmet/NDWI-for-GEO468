@@ -26,3 +26,6 @@ Sentinel 2A image which is taken from the satellite the date 12.08.2020.
 ### __Band3 and Band8 Plots which are Used for NDWI:__
 -![Band3_Band8_Plot](Band3_Band8_Plot.JPG)
 
+-NDWI = Band3 - Band8 / Band3 + Band8
+
+
