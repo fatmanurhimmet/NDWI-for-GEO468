@@ -7,8 +7,20 @@ This code calculates the NDWI of Sentinel 2A image in Kocaeli Gulf region. Satel
 ### Image Properties
 Sentinel 2A image which is taken from the satellite the date 12.08.2020. 
 
+***
 ### Used Image Bands
 - __Band 4, Band 3 and Band 2 which are Red, Green and Blue Bands for RGB True Colors__
 - __Band 8 which is NIR Band__
+
+***
+### Jupyter Notebook which have pyhton 3.6.12 version and its libraries were used in this project!
+
+***
+### Used Python Libraries
+- __ Rasterio__
+- __ Matplotlib__
+- __ Numpy__
+- __Opencv__
+
 
 
