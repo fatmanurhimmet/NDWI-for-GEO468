@@ -21,5 +21,5 @@ Sentinel 2A image which is taken from the satellite the date 12.08.2020.
 - Opencv
 
 ***
-###-The RGB colors of the image is shown: 
+###-__The RGB colors of the image is shown:__ 
 -![RGB Image Plot](RGB_Image_Plot.JPG)
