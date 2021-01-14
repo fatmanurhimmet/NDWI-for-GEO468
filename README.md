@@ -31,7 +31,7 @@ Sentinel 2A image which is taken from the satellite the date 12.08.2020.
 ## Outputs
 
 """
--#export NDWI image
+-__#export NDWI image__
 -ndwiImage = rasterio.open('Desktop/sentinel_output_ndwi.tif','w',driver='Gtiff',
 -                          width=band8.width, 
 -                          height = band8.height, 
@@ -47,6 +47,20 @@ Sentinel 2A image which is taken from the satellite the date 12.08.2020.
  """
  ### __Output NDWI Plot:__
  -![NDWI_Plot](NDWI_Plot.JPG)
+ 
+ __Creating Histogram__
+ '''
+ #plot a histogram NDWI
+def image_histogram(ndwi2):
+    from rasterio.plot import show_hist
+    co, ce =show_hist(ndwi)
+    fig = plt.figure(figsize=(10,7))
+    fig.set_facecolor('yellow')
+    plt.plot(ce[1::], co[1::])
+    plt.show()
+get_ipython().run_line_magic('matplotlib', 'inline')
+image_histogram(ndwi2)
+'''
  
  ### __NDWI Histogram Plot:__
  -![NDWI_Histogram](NDWI_Histogram.JPG)
