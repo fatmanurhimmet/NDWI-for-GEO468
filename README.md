@@ -28,7 +28,7 @@ Sentinel 2A image which is taken from the satellite the date 12.08.2020.
 
 -NDWI = Band3 - Band8 / Band3 + Band8
 
-''' Python
+"""
 #export NDWI image
 ndwiImage = rasterio.open('Desktop/sentinel_output_ndwi.tif','w',driver='Gtiff',
                           width=band8.width, 
@@ -44,4 +44,4 @@ ndwiImage.close()
 ndwiImage = rasterio.open('Desktop/sentinel_output_ndwi.tif') 
 fig = plt.figure(figsize=(18,12))
 plot.show(ndwiImage, cmap='gray')
-'''
+ """
