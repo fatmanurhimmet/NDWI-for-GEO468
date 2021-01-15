@@ -95,15 +95,6 @@ ndwi2 = rasterio.open('Desktop/sentinel_output_ndwi.tif')
 fig = plt.figure(figsize=(18,12))
 plot.show(ndwi)
 
-array_t1 = ndwi.ReadAsArray()[0:, 0:].astype(float)
-
-# create figure to display original ndtidif= NDTI difference
-output_fig, (histogram_ax) = plt.subplots(figsize=(10, 3))
-histogram_ax.hist(array_ndwi.ravel(), bins=200, range=(-1.0, 1.0))
-histogram_ax.grid(b=True, color='gray', linestyle='--', linewidth=0.5);
-plt.show()
-
-
 #added histogram code is belows
 #plot a histogram NDWI
 def image_histogram(ndwi2):
